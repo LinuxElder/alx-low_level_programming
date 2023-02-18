@@ -1,17 +1,31 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 /**
- * main - prints the alphabet in lowercase,
- * followed by a new line
- * Return: Always 0 (Success)
- */
+ * main - Prints alphabet
+ *
+ * Description: Prints the alphabet in lower and upper case
+ * Can only use putchar 3 times
+ *
+ * Return: 0 for success
+*/
 int main(void)
 {
-	char ch;
+	char letter = 'a';
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	while (letter <= 'z')
 	{
-		putchar(ch);
+		putchar(letter);
+		letter++;
+	}
+
+	letter = 'A';
+
+	while (letter <= 'Z')
+	{
+		putchar(letter);
+		letter++;
 	}
 	putchar('\n');
 	return (0);
